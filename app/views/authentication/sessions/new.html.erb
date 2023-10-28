@@ -1,0 +1,16 @@
+<%= form_with(url: sessions_path) do |form| %>
+
+  <div>
+    <%= form.label :dni %>
+    <%= form.number_field :dni %>
+  </div>
+
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
